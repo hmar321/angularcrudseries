@@ -1,0 +1,7 @@
+<div class="card" style="width: 18rem;" *ngIf="personaje">
+    <img src="{{personaje.imagen}}" class="card-img-top" style="width: 18rem;height: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{personaje.nombre}}</h5>
+      <a [routerLink]="['/personajes',personaje.idSerie]" class="btn btn-primary">Volver</a>
+    </div>
+  </div>

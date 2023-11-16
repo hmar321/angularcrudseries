@@ -1,0 +1,18 @@
+<table class="table table-dark table-striped" *ngIf="personajes">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Imagen</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let personaje of personajes">
+            <td>{{personaje.nombre}}</td>
+            <td><img src="{{personaje.imagen}}" style="width: 100px;height: 100px;"></td>
+            <td>
+                <a [routerLink]="['/personaje',personaje.idPersonaje]" class="btn btn-primary">Detalles</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
