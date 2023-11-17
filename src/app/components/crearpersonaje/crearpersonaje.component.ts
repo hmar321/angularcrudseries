@@ -28,6 +28,7 @@ export class CrearpersonajeComponent implements OnInit {
   }
 
   crearPersonaje():void{
-    /////
+    console.log(this.personaje);
+    //LA SERIE SE TOMA COMO STRING !!!
   }
 }
